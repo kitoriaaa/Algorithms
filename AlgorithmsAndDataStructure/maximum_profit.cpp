@@ -15,7 +15,7 @@ int main()
         cin >> R[i];
     }
 
-    int maxv = -200000000;
+    int maxv = -1000000000;
     int minv = R[0];
 
     for (int i = 1; i < n; i++) {
