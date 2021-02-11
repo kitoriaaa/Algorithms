@@ -6,10 +6,16 @@ typedef vector<int> VI;
 
 
 int main() {
-    int a, b;
-    cin >> a >> b;
+    int n;
+    cin >> n;
+    VI a(n);
+    rep(i, n) cin >> a[i];
+    
+    sort(a.begin(), a.end());
+    long long a_sum = 0;
+    rep(i, n) a_sum += a[i];
 
-    cout << a*b << ' ' << 2*a+2*b << endl;
+    cout << a[0] << " " << a[a.size()-1] << " " << a_sum << endl;
 
     return 0;
 }

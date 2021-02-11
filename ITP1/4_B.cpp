@@ -6,10 +6,13 @@ typedef vector<int> VI;
 
 
 int main() {
-    int a, b;
-    cin >> a >> b;
+    double r;
+    cin >> r;
 
-    cout << a*b << ' ' << 2*a+2*b << endl;
+    double area = M_PI*r*r;
+    double circle = 2*M_PI*r;
+
+    cout << fixed << setprecision(5) << area << " " << circle << endl;
 
     return 0;
 }
